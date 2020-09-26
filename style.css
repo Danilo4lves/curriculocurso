@@ -57,22 +57,22 @@ body {
   margin-left: 10px;
 }
 
-#passei-button {
+.passei-button {
   background: var(--cor-passei-botao);
   width: 70px;
 }
 
-#passei-button:hover {
+.passei-button:hover {
   background: var(--cor-passei-botao-hover);
   cursor: pointer;
 }
 
-#perdi-button {
+.perdi-button {
   background: var(--cor-perdi-botao);
   width: 70px;
 }
 
-#perdi-button:hover {
+.perdi-button:hover {
   background: var(--cor-perdi-botao-hover);
   cursor: pointer;
 }
