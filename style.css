@@ -1,173 +1,193 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.2s;
+}
+
+:root {
+  --global-radius: 6px;
+
+  /* --cor-background: #1f1f1f; */
+  --cor-background: #313131;
+  --cor-normal-background: #616469; /* #F58309 - #98BFF7 */
+
+  --cor-semestre-titulo: #aaaaaa;
+  --cor-materia: rgb(30, 30, 30);
+  --cor-materia-hover: rgb(0, 0, 0);
+
+  --cor-passei-botao: #82c682;
+  --cor-passei-botao-hover: #32ba07;
+  --cor-perdi-botao: #bd526c;
+  --cor-perdi-botao-hover: #ee4c39;
+
+  --cor-verde-forte: #3f874e; /* #046E1F */
+  --cor-verde-fraco: #98c376; /* #32BA07 */
+  --cor-vermelho-forte: #bd526c; /* #ad0602 - #B40000 */
+  --cor-vermelho-fraco: #f77f9b; /* #EE4C39 - #F61F1F */
+
+  --tamanho-semestre-titulo: 20px;
+  --tamanho-materia: 90%;
+  --tamanho-materia-box: 130px;
 }
 
 body {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-column-gap: 10px;
-    margin: 0px 1%;
-    background: #28272C;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-column-gap: 10px;
+  background: var(--cor-background);
 }
 
 .semestre-materias {
-    display: grid;
-    grid-auto-rows: 1fr;
-    grid-row-gap: 10px;
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-row-gap: 10px;
 }
 
 .semestre h1 {
-    font-size: 20px;
-    text-align: center;
-    color: #AAAAAA;
+  font-size: var(--tamanho-semestre-titulo);
+  text-align: center;
+  color: var(--cor-semestre-titulo);
 }
 
 .semestre span {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 #materia-buttons {
-    display: flex;
-    position: absolute;
-    bottom: 3px;
-    margin-left: 10px;
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  margin-left: 10px;
+  font-size: 85%;
 }
 
-#passei-button {
-    background: #82C682;
-    width: 70px;
+.passei-button {
+  background: var(--cor-passei-botao);
+  border-radius: var(--global-radius) 0 0 var(--global-radius);
+  width: 70px;
 }
 
-#passei-button:hover {
-    background: #32BA07;
-    cursor: pointer;
+.passei-button:hover {
+  background: var(--cor-passei-botao-hover);
+  cursor: pointer;
 }
 
-#perdi-button {
-    background: #BD526C;
-    width: 70px;
+.perdi-button {
+  background: var(--cor-perdi-botao);
+  border-radius: 0 var(--global-radius) var(--global-radius) 0;
+  width: 70px;
 }
 
-#perdi-button:hover {
-    background: #EE4C39;
-    cursor: pointer;
+.perdi-button:hover {
+  background: var(--cor-perdi-botao-hover);
+  cursor: pointer;
 }
-
 
 .verde-forte {
-    /*background: #046E1F;*/
-    background: #3F874E;
-    font-weight: bold;
-    text-align: center;
-    height: 92px;
-    border-radius: 2px;
-    position: relative;
-    width: 160px;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+  background: var(--cor-verde-forte);
+  font-weight: bold;
+  text-align: center;
+  border-radius: var(--global-radius);
+  position: relative;
+  height: var(--tamanho-materia-box);
+  width: 160px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 
 .verde-forte a {
-    text-decoration: none;
-    color: black;
-    font-size: 100%;
+  text-decoration: none;
+  color: var(--cor-materia);
+  font-size: var(--tamanho-materia);
 }
 
 .verde-forte a:hover {
-    color: white;
+  color: var(--cor-materia-hover);
 }
 
 .vermelho-forte {
-/*    background: #ad0602;*/
-    /*background: #B40000;*/
-    background: #BD526C;
-    font-weight: bold;
-    text-align: center;
-    height: 92px;
-    border-radius: 2px;
-    position: relative;
-    width: 160px;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+  background: var(--cor-vermelho-forte);
+  font-weight: bold;
+  text-align: center;
+  border-radius: var(--global-radius);
+  position: relative;
+  height: var(--tamanho-materia-box);
+  width: 160px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 
 .vermelho-forte a {
-    text-decoration: none;
-    color: black;
-    font-size: 100%;
+  text-decoration: none;
+  color: var(--cor-materia);
+  font-size: var(--tamanho-materia);
 }
 
 .vermelho-forte a:hover {
-    color: white;
+  color: var(--cor-materia-hover);
 }
 
 .verde-fraco {
-/*    background: #32BA07;*/
-    background: #98C376;
-    font-weight: bold;
-    text-align: center;
-    height: 92px;
-    border-radius: 2px;
-    position: relative;
-    width: 160px;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+  background: var(--cor-verde-fraco);
+  font-weight: bold;
+  text-align: center;
+  border-radius: var(--global-radius);
+  position: relative;
+  height: var(--tamanho-materia-box);
+  width: 160px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 
 .verde-fraco a {
-    text-decoration: none;
-    color: black;
-    font-size: 100%;
+  text-decoration: none;
+  color: var(--cor-materia);
+  font-size: var(--tamanho-materia);
 }
 
 .verde-fraco a:hover {
-    color: white;
+  color: var(--cor-materia-hover);
 }
 
 .vermelho-fraco {
-/*    background: #EE4C39;*/
-    /*background: #F61F1F;*/
-    background: #F77F9B;
-    font-weight: bold;
-    text-align: center;
-    height: 92px;
-    border-radius: 2px;
-    position: relative;
-    width: 160px;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+  background: var(--cor-vermelho-fraco);
+  font-weight: bold;
+  text-align: center;
+  border-radius: var(--global-radius);
+  position: relative;
+  height: var(--tamanho-materia-box);
+  width: 160px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 
 .vermelho-fraco a {
-    text-decoration: none;
-    color: black;
-    font-size: 100%;
+  text-decoration: none;
+  color: var(--cor-materia);
+  font-size: var(--tamanho-materia);
 }
 .vermelho-fraco a:hover {
-    color: white;
+  color: var(--cor-materia-hover);
 }
 
 .normal {
-    /*--background: #F58309;*/
-    /*--background: #98BFF7;*/
-    background: #616469;
-    font-weight: bold;
-    text-align: center;
-    height: 92px;
-    border-radius: 2px;
-    position: relative;
-    width: 160px;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+  background: var(--cor-normal-background);
+  font-weight: bold;
+  text-align: center;
+  border-radius: var(--global-radius);
+  position: relative;
+  width: 160px;
+  height: var(--tamanho-materia-box);
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 
 .normal a {
-    text-decoration: none;
-    color: black;
-    font-size: 100%;
+  text-decoration: none;
+  color: var(--cor-materia);
+  font-size: var(--tamanho-materia);
 }
 .normal a:hover {
-    color: white;
+  color: var(--cor-materia-hover);
 }
