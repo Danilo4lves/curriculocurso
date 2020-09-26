@@ -23,14 +23,14 @@
   --cor-vermelho-fraco: #f77f9b; /* #EE4C39 - #F61F1F */
 
   --tamanho-semestre-titulo: 20px;
-  --tamanho-materia: 100%;
+  --tamanho-materia: 90%;
+  --tamanho-materia-box: 130px;
 }
 
 body {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-column-gap: 10px;
-  margin: 0px 1%;
   background: var(--cor-background);
 }
 
@@ -55,6 +55,7 @@ body {
   position: absolute;
   bottom: 3px;
   margin-left: 10px;
+  font-size: 85%;
 }
 
 .passei-button {
@@ -81,9 +82,9 @@ body {
   background: var(--cor-verde-forte);
   font-weight: bold;
   text-align: center;
-  height: 92px;
   border-radius: 2px;
   position: relative;
+  height: var(--tamanho-materia-box);
   width: 160px;
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -103,9 +104,9 @@ body {
   background: var(--cor-vermelho-forte);
   font-weight: bold;
   text-align: center;
-  height: 92px;
   border-radius: 2px;
   position: relative;
+  height: var(--tamanho-materia-box);
   width: 160px;
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -125,9 +126,9 @@ body {
   background: var(--cor-verde-fraco);
   font-weight: bold;
   text-align: center;
-  height: 92px;
   border-radius: 2px;
   position: relative;
+  height: var(--tamanho-materia-box);
   width: 160px;
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -147,9 +148,9 @@ body {
   background: var(--cor-vermelho-fraco);
   font-weight: bold;
   text-align: center;
-  height: 92px;
   border-radius: 2px;
   position: relative;
+  height: var(--tamanho-materia-box);
   width: 160px;
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -168,10 +169,10 @@ body {
   background: var(--cor-normal-background);
   font-weight: bold;
   text-align: center;
-  height: 92px;
   border-radius: 2px;
   position: relative;
   width: 160px;
+  height: var(--tamanho-materia-box);
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
