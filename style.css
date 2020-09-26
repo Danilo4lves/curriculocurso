@@ -4,12 +4,34 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+:root {
+  --cor-background: #28272c;
+  --cor-normal-background: #616469; /* #F58309 - #98BFF7 */
+
+  --cor-semestre-titulo: #aaaaaa;
+  --materia: #000;
+  --materia-hover: #fff;
+
+  --cor-passei-botao: #82c682;
+  --cor-passei-botao-hover: #32ba07;
+  --cor-perdi-botao: #bd526c;
+  --cor-perdi-botao-hover: #ee4c39;
+
+  --cor-verde-forte: #3f874e; /* #046E1F */
+  --cor-verde-fraco: #98c376; /* #32BA07 */
+  --cor-vermelho-forte: #bd526c; /* #ad0602 - #B40000 */
+  --cor-vermelho-fraco: #f77f9b; /* #EE4C39 - #F61F1F */
+
+  --tamanho-semestre-titulo: 20px;
+  --tamanho-materia: 100%;
+}
+
 body {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-column-gap: 10px;
   margin: 0px 1%;
-  background: #28272c;
+  background: var(--cor-background);
 }
 
 .semestre-materias {
@@ -19,9 +41,9 @@ body {
 }
 
 .semestre h1 {
-  font-size: 20px;
+  font-size: var(--tamanho-semestre-titulo);
   text-align: center;
-  color: #aaaaaa;
+  color: var(--cor-semestre-titulo);
 }
 
 .semestre span {
@@ -36,28 +58,27 @@ body {
 }
 
 #passei-button {
-  background: #82c682;
+  background: var(--cor-passei-botao);
   width: 70px;
 }
 
 #passei-button:hover {
-  background: #32ba07;
+  background: var(--cor-passei-botao-hover);
   cursor: pointer;
 }
 
 #perdi-button {
-  background: #bd526c;
+  background: var(--cor-perdi-botao);
   width: 70px;
 }
 
 #perdi-button:hover {
-  background: #ee4c39;
+  background: var(--cor-perdi-botao-hover);
   cursor: pointer;
 }
 
 .verde-forte {
-  /*background: #046E1F;*/
-  background: #3f874e;
+  background: var(--cor-verde-forte);
   font-weight: bold;
   text-align: center;
   height: 92px;
@@ -70,18 +91,16 @@ body {
 
 .verde-forte a {
   text-decoration: none;
-  color: black;
-  font-size: 100%;
+  color: var(--materia);
+  font-size: var(--tamanho-materia);
 }
 
 .verde-forte a:hover {
-  color: white;
+  color: var(--materia-hover);
 }
 
 .vermelho-forte {
-  /*    background: #ad0602;*/
-  /*background: #B40000;*/
-  background: #bd526c;
+  background: var(--cor-vermelho-forte);
   font-weight: bold;
   text-align: center;
   height: 92px;
@@ -94,17 +113,16 @@ body {
 
 .vermelho-forte a {
   text-decoration: none;
-  color: black;
-  font-size: 100%;
+  color: var(--materia);
+  font-size: var(--tamanho-materia);
 }
 
 .vermelho-forte a:hover {
-  color: white;
+  color: var(--materia-hover);
 }
 
 .verde-fraco {
-  /*    background: #32BA07;*/
-  background: #98c376;
+  background: var(--cor-verde-fraco);
   font-weight: bold;
   text-align: center;
   height: 92px;
@@ -117,18 +135,16 @@ body {
 
 .verde-fraco a {
   text-decoration: none;
-  color: black;
-  font-size: 100%;
+  color: var(--materia);
+  font-size: var(--tamanho-materia);
 }
 
 .verde-fraco a:hover {
-  color: white;
+  color: var(--materia-hover);
 }
 
 .vermelho-fraco {
-  /*    background: #EE4C39;*/
-  /*background: #F61F1F;*/
-  background: #f77f9b;
+  background: var(--cor-vermelho-fraco);
   font-weight: bold;
   text-align: center;
   height: 92px;
@@ -141,17 +157,15 @@ body {
 
 .vermelho-fraco a {
   text-decoration: none;
-  color: black;
-  font-size: 100%;
+  color: var(--materia);
+  font-size: var(--tamanho-materia);
 }
 .vermelho-fraco a:hover {
-  color: white;
+  color: var(--materia-hover);
 }
 
 .normal {
-  /*--background: #F58309;*/
-  /*--background: #98BFF7;*/
-  background: #616469;
+  background: var(--cor-normal-background);
   font-weight: bold;
   text-align: center;
   height: 92px;
@@ -164,9 +178,9 @@ body {
 
 .normal a {
   text-decoration: none;
-  color: black;
-  font-size: 100%;
+  color: var(--materia);
+  font-size: var(--tamanho-materia);
 }
 .normal a:hover {
-  color: white;
+  color: var(--materia-hover);
 }
