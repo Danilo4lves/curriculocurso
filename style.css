@@ -5,12 +5,14 @@
 }
 
 :root {
+  --global-radius: 6px;
+
   --cor-background: #28272c;
   --cor-normal-background: #616469; /* #F58309 - #98BFF7 */
 
   --cor-semestre-titulo: #aaaaaa;
-  --materia: #000;
-  --materia-hover: #fff;
+  --cor-materia: #000;
+  --cor-materia-hover: #fff;
 
   --cor-passei-botao: #82c682;
   --cor-passei-botao-hover: #32ba07;
@@ -60,6 +62,7 @@ body {
 
 .passei-button {
   background: var(--cor-passei-botao);
+  border-radius: var(--global-radius) 0 0 var(--global-radius);
   width: 70px;
 }
 
@@ -70,6 +73,7 @@ body {
 
 .perdi-button {
   background: var(--cor-perdi-botao);
+  border-radius: 0 var(--global-radius) var(--global-radius) 0;
   width: 70px;
 }
 
@@ -82,7 +86,7 @@ body {
   background: var(--cor-verde-forte);
   font-weight: bold;
   text-align: center;
-  border-radius: 2px;
+  border-radius: var(--global-radius);
   position: relative;
   height: var(--tamanho-materia-box);
   width: 160px;
@@ -92,19 +96,19 @@ body {
 
 .verde-forte a {
   text-decoration: none;
-  color: var(--materia);
+  color: var(--cor-materia);
   font-size: var(--tamanho-materia);
 }
 
 .verde-forte a:hover {
-  color: var(--materia-hover);
+  color: var(--cor-materia-hover);
 }
 
 .vermelho-forte {
   background: var(--cor-vermelho-forte);
   font-weight: bold;
   text-align: center;
-  border-radius: 2px;
+  border-radius: var(--global-radius);
   position: relative;
   height: var(--tamanho-materia-box);
   width: 160px;
@@ -114,19 +118,19 @@ body {
 
 .vermelho-forte a {
   text-decoration: none;
-  color: var(--materia);
+  color: var(--cor-materia);
   font-size: var(--tamanho-materia);
 }
 
 .vermelho-forte a:hover {
-  color: var(--materia-hover);
+  color: var(--cor-materia-hover);
 }
 
 .verde-fraco {
   background: var(--cor-verde-fraco);
   font-weight: bold;
   text-align: center;
-  border-radius: 2px;
+  border-radius: var(--global-radius);
   position: relative;
   height: var(--tamanho-materia-box);
   width: 160px;
@@ -136,19 +140,19 @@ body {
 
 .verde-fraco a {
   text-decoration: none;
-  color: var(--materia);
+  color: var(--cor-materia);
   font-size: var(--tamanho-materia);
 }
 
 .verde-fraco a:hover {
-  color: var(--materia-hover);
+  color: var(--cor-materia-hover);
 }
 
 .vermelho-fraco {
   background: var(--cor-vermelho-fraco);
   font-weight: bold;
   text-align: center;
-  border-radius: 2px;
+  border-radius: var(--global-radius);
   position: relative;
   height: var(--tamanho-materia-box);
   width: 160px;
@@ -158,18 +162,18 @@ body {
 
 .vermelho-fraco a {
   text-decoration: none;
-  color: var(--materia);
+  color: var(--cor-materia);
   font-size: var(--tamanho-materia);
 }
 .vermelho-fraco a:hover {
-  color: var(--materia-hover);
+  color: var(--cor-materia-hover);
 }
 
 .normal {
   background: var(--cor-normal-background);
   font-weight: bold;
   text-align: center;
-  border-radius: 2px;
+  border-radius: var(--global-radius);
   position: relative;
   width: 160px;
   height: var(--tamanho-materia-box);
@@ -179,9 +183,9 @@ body {
 
 .normal a {
   text-decoration: none;
-  color: var(--materia);
+  color: var(--cor-materia);
   font-size: var(--tamanho-materia);
 }
 .normal a:hover {
-  color: var(--materia-hover);
+  color: var(--cor-materia-hover);
 }
