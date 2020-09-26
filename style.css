@@ -8,12 +8,13 @@
 :root {
   --global-radius: 6px;
 
-  --cor-background: #28272c;
+  /* --cor-background: #1f1f1f; */
+  --cor-background: #313131;
   --cor-normal-background: #616469; /* #F58309 - #98BFF7 */
 
   --cor-semestre-titulo: #aaaaaa;
-  --cor-materia: #000;
-  --cor-materia-hover: #fff;
+  --cor-materia: rgb(30, 30, 30);
+  --cor-materia-hover: rgb(0, 0, 0);
 
   --cor-passei-botao: #82c682;
   --cor-passei-botao-hover: #32ba07;
@@ -56,7 +57,7 @@ body {
 #materia-buttons {
   display: flex;
   position: absolute;
-  bottom: 3px;
+  bottom: 10px;
   margin-left: 10px;
   font-size: 85%;
 }
