@@ -1,173 +1,172 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-column-gap: 10px;
-    margin: 0px 1%;
-    background: #28272C;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  margin: 0px 1%;
+  background: #28272c;
 }
 
 .semestre-materias {
-    display: grid;
-    grid-auto-rows: 1fr;
-    grid-row-gap: 10px;
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-row-gap: 10px;
 }
 
 .semestre h1 {
-    font-size: 20px;
-    text-align: center;
-    color: #AAAAAA;
+  font-size: 20px;
+  text-align: center;
+  color: #aaaaaa;
 }
 
 .semestre span {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 #materia-buttons {
-    display: flex;
-    position: absolute;
-    bottom: 3px;
-    margin-left: 10px;
+  display: flex;
+  position: absolute;
+  bottom: 3px;
+  margin-left: 10px;
 }
 
 #passei-button {
-    background: #82C682;
-    width: 70px;
+  background: #82c682;
+  width: 70px;
 }
 
 #passei-button:hover {
-    background: #32BA07;
-    cursor: pointer;
+  background: #32ba07;
+  cursor: pointer;
 }
 
 #perdi-button {
-    background: #BD526C;
-    width: 70px;
+  background: #bd526c;
+  width: 70px;
 }
 
 #perdi-button:hover {
-    background: #EE4C39;
-    cursor: pointer;
+  background: #ee4c39;
+  cursor: pointer;
 }
 
-
 .verde-forte {
-    /*background: #046E1F;*/
-    background: #3F874E;
-    font-weight: bold;
-    text-align: center;
-    height: 92px;
-    border-radius: 2px;
-    position: relative;
-    width: 160px;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+  /*background: #046E1F;*/
+  background: #3f874e;
+  font-weight: bold;
+  text-align: center;
+  height: 92px;
+  border-radius: 2px;
+  position: relative;
+  width: 160px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 
 .verde-forte a {
-    text-decoration: none;
-    color: black;
-    font-size: 100%;
+  text-decoration: none;
+  color: black;
+  font-size: 100%;
 }
 
 .verde-forte a:hover {
-    color: white;
+  color: white;
 }
 
 .vermelho-forte {
-/*    background: #ad0602;*/
-    /*background: #B40000;*/
-    background: #BD526C;
-    font-weight: bold;
-    text-align: center;
-    height: 92px;
-    border-radius: 2px;
-    position: relative;
-    width: 160px;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+  /*    background: #ad0602;*/
+  /*background: #B40000;*/
+  background: #bd526c;
+  font-weight: bold;
+  text-align: center;
+  height: 92px;
+  border-radius: 2px;
+  position: relative;
+  width: 160px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 
 .vermelho-forte a {
-    text-decoration: none;
-    color: black;
-    font-size: 100%;
+  text-decoration: none;
+  color: black;
+  font-size: 100%;
 }
 
 .vermelho-forte a:hover {
-    color: white;
+  color: white;
 }
 
 .verde-fraco {
-/*    background: #32BA07;*/
-    background: #98C376;
-    font-weight: bold;
-    text-align: center;
-    height: 92px;
-    border-radius: 2px;
-    position: relative;
-    width: 160px;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+  /*    background: #32BA07;*/
+  background: #98c376;
+  font-weight: bold;
+  text-align: center;
+  height: 92px;
+  border-radius: 2px;
+  position: relative;
+  width: 160px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 
 .verde-fraco a {
-    text-decoration: none;
-    color: black;
-    font-size: 100%;
+  text-decoration: none;
+  color: black;
+  font-size: 100%;
 }
 
 .verde-fraco a:hover {
-    color: white;
+  color: white;
 }
 
 .vermelho-fraco {
-/*    background: #EE4C39;*/
-    /*background: #F61F1F;*/
-    background: #F77F9B;
-    font-weight: bold;
-    text-align: center;
-    height: 92px;
-    border-radius: 2px;
-    position: relative;
-    width: 160px;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+  /*    background: #EE4C39;*/
+  /*background: #F61F1F;*/
+  background: #f77f9b;
+  font-weight: bold;
+  text-align: center;
+  height: 92px;
+  border-radius: 2px;
+  position: relative;
+  width: 160px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 
 .vermelho-fraco a {
-    text-decoration: none;
-    color: black;
-    font-size: 100%;
+  text-decoration: none;
+  color: black;
+  font-size: 100%;
 }
 .vermelho-fraco a:hover {
-    color: white;
+  color: white;
 }
 
 .normal {
-    /*--background: #F58309;*/
-    /*--background: #98BFF7;*/
-    background: #616469;
-    font-weight: bold;
-    text-align: center;
-    height: 92px;
-    border-radius: 2px;
-    position: relative;
-    width: 160px;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+  /*--background: #F58309;*/
+  /*--background: #98BFF7;*/
+  background: #616469;
+  font-weight: bold;
+  text-align: center;
+  height: 92px;
+  border-radius: 2px;
+  position: relative;
+  width: 160px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 
 .normal a {
-    text-decoration: none;
-    color: black;
-    font-size: 100%;
+  text-decoration: none;
+  color: black;
+  font-size: 100%;
 }
 .normal a:hover {
-    color: white;
+  color: white;
 }
